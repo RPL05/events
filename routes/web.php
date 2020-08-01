@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['prefix' => 'kegiatan'], function(){
+    Route::get('index', 'ActivityController@index')->name('backend.kegiatan.index');
+    Route::get('create', 'ActivityController@create')->name('backend.kegiatan.create');
+});
