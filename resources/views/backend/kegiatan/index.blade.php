@@ -12,7 +12,7 @@
 
       <div class="card border-0 shadow">
         <div class="px-3 py-3">
-          <h4 class="text-muted">Kegiatan Masjid</h4>
+          <h4 class="text-muted">Master Kegiatan</h4>
         </div>
         <div class="card-body">
           <table class="table table-bordered">
@@ -34,7 +34,7 @@
                 <td>jsiakcjam</td>
                 <td>hadir</td>
                 <td>
-                  <a href="http://" class="btn btn-outline-primary btn-sm">Edit</a>
+                <a href="{{route('backend.kegiatan.show-formEdit')}}" class="btn btn-outline-primary btn-sm">Edit</a>
                   <a href="http://" class="btn btn-outline-danger btn-sm">Hapus</a>
                 </td>
               </tr>

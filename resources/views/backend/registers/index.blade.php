@@ -32,7 +32,7 @@
                       <th>011019</th>
                       <th>Wait</th>
                       <th>
-                        <a href="http://" class="btn btn-info">Tampilkan</a>
+                        <a href="{{{route('register.show-register')}}}" class="btn btn-info">Tampilkan</a>
                       </th>
                     </tr>
                   </tbody>

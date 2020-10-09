@@ -33,6 +33,12 @@
                       <input type="date" name="" id="" class="form-control">
                     </div>
                   </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="">Status</label>
+                      <input type="text" name="" id="" class="form-control">
+                    </div>
+                  </div>
                   <div class="px-3 py-3">
                     <button type="submit" class="btn btn-info">Kirim Pendaftaran</button>
                   </div>
