@@ -24,6 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['prefix' => 'kegiatan'], function(){
     Route::get('index', 'ActivityController@index')->name('backend.kegiatan.index');
     Route::get('create', 'ActivityController@create')->name('backend.kegiatan.create');
+    Route::post('save', 'ActivityController@store')->name('kegiatan.save');
     Route::get('show-formEdit','ActivityController@edit')->name('backend.kegiatan.show-formEdit');
 });
 
