@@ -9,7 +9,7 @@ use Intervention\Image\Facades\Image;
 
 class ActivityController extends Controller
 {
-    
+
     public function __construct()
     {
         $this->activity = new Activity();
@@ -21,9 +21,10 @@ class ActivityController extends Controller
      */
     public function index()
     {
-        
+        $activitys = Activity::all();
         // dd(Carbon::now());
-        return view("backend.kegiatan.index");
+        return view("backend.kegiatan.index", compact('activitys'));
+
     }
 
     /**
@@ -34,7 +35,7 @@ class ActivityController extends Controller
     public function create()
     {
         $getcode = $this->activity->generateCode();
-        
+
         return view("backend.kegiatan.create", compact('getcode'));
     }
 
@@ -59,7 +60,7 @@ class ActivityController extends Controller
             'information'   => 'required',
             'status'        => 'required',
             'price'         => 'required',
-            'images'          => 'file|image|max:5000',
+            'images'        => 'file|image|max:5000',
             'capacity'      => 'required',
         ]), function(){
             if(request()->hasFIle('images')){
@@ -67,7 +68,7 @@ class ActivityController extends Controller
                     'images'  => 'file|image|max:5000',
                 ]);
             }
-        }); 
+        });
     }
     private function storeImage($activity){
         if(request()->has('images')){

@@ -17,7 +17,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                     <label for="name">Kode Kegiatan</label>
-                    <input type="text" name="code_activity" id="" class="form-control" value="{{ $getcode }}" placeholder="" readonly>
+                    <input type="text" name="code_activity" id="" class="form-control" value="{{ $getcode }}" placeholder="" >
                 </div>
               </div>
               <div class="col-md-6">
@@ -62,10 +62,10 @@
                     <label for="name">Informasi</label>
                     <textarea name="information" id="" class="form-control"></textarea>
                 </div>
-              </div> 
+              </div>
             </div>
             <div class="pt-2 mb-2">
-              <button type="submit" class="btn btn-outline-info" method="POST">
+              <button type="submit" class="btn btn-outline-info" >
                   Save
               </button>
             </div>
