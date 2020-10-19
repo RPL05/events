@@ -27,7 +27,7 @@
             <tbody>
                 @foreach ($activitys as $activity)
               <tr>
-                <td><a href="{{route('backend.kegiatan.show-formEdit')}}" class="btn btn-outline-primary btn-sm">{{$activity->code_activity}}</a></td>
+                <td><a href="{{route('backend.kegiatan.show-formEdit', $activity->id)}}" class="btn btn-outline-primary btn-sm">{{$activity->code_activity}}</a></td>
                 <td>{{$activity->date}}</td>
                 <td>{{$activity->status}}</td>
                 <td>
