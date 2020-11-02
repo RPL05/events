@@ -26,7 +26,7 @@
         <div class="nav-scroller bg-white shadow-sm">
             <nav class="nav nav-underline ml-4 py-2">
                 <a href="" class="nav-link"> <h6 class="text-muted">Home</h6></a>
-            <a href="{{ route('backend.kegiatan.index') }}" class="nav-link"> <h6 class="text-muted">Kegiatan</h6></a>
+            <a href="{{ route('users.kegiatan.index') }}" class="nav-link"> <h6 class="text-muted">Kegiatan</h6></a>
                 <a href="" class="nav-link"> <h6 class="text-muted">Daftar</h6></a>
             </nav>
         </div>
@@ -74,33 +74,36 @@
                 </div>
             </div>
         </div>
-        <div class="container py-3">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-white">
-                    <li class="breadcrumb-item active" aria-current="page">Kegiatan</li>
-                </ol>
-            </nav>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card border-0">
-                            <img src="{{ asset('image/undraw_quitting_time_dm8t.png') }}" alt="" class="card-img-top">
-                            <div class="card-body">
-                                <h3>Kegiatan Non-active</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, deserunt nostrum doloribus repudiandae molestias, totam natus veritatis illo repellat aperiam animi rerum, est quaerat vitae ut quas voluptates quisquam ex.</p>
-                                <button type="submit" class="btn btn-outline-info btn-lg btn-block" disabled>Coming Soon</button>
+            <div class="container py-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-white">
+                        <li class="breadcrumb-item active" aria-current="page">Kegiatan</li>
+                    </ol>
+                </nav>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card border-0">
+                                <img src="{{ asset('image/undraw_quitting_time_dm8t.png') }}" alt="" class="card-img-top">
+                                <div class="card-body">
+                                    <h3>Kegiatan Non-active</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, deserunt nostrum doloribus repudiandae molestias, totam natus veritatis illo repellat aperiam animi rerum, est quaerat vitae ut quas voluptates quisquam ex.</p>
+                                    <button type="submit" class="btn btn-outline-info btn-lg btn-block" disabled>Daftar</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card border-0">
-                            <img src="{{ asset('image/undraw_winter_designer_a2m7.png') }}" alt="" class="card-img-top">
-                            <div class="card-body">
-                                <h3>Kegiatan Active</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, deserunt nostrum doloribus repudiandae molestias, totam natus veritatis illo repellat aperiam animi rerum, est quaerat vitae ut quas voluptates quisquam ex.</p>
-                                <button type="submit" class="btn btn-outline-secondary btn-lg btn-block">Daftar</button>
+                        <div class="col-md-6">
+                            <div class="card border-0">
+                                <img src="{{ asset('image/undraw_quitting_time_dm8t.png') }}" alt="" class="card-img-top rounded-circle">
+                                <div class="card-body">
+                                    <h3>Kegiatan Active</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, deserunt nostrum doloribus repudiandae molestias, totam natus veritatis illo repellat aperiam animi rerum, est quaerat vitae ut quas voluptates quisquam ex.</p>
+                                    <button class="btn btn-outline-success btn-lg btn-block" disabled>
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                        Coming soon
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>

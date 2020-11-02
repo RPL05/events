@@ -33,6 +33,7 @@ Route::group(['prefix' => 'kegiatan'], function(){
 
 Route::Group(['prefix' => 'users'], function(){
     Route::get('index', 'User\UserController@index')->name('users');
+    Route::get('index', 'Kegiatan\KegiatanController@index')->name('users.kegiatan.index');
 });
 
 Route::group(['prefix' => 'registers'], function () {
