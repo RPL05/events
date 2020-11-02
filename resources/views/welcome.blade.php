@@ -30,6 +30,12 @@
                 <a href="" class="nav-link"> <h6 class="text-muted">Daftar</h6></a>
             </nav>
         </div>
+        <div class="jumbotron" style="background-image: url('image/undraw_investment_xv9d.png')">
+            <div class="container">
+                <h3 class="text-center">Aplikasi Management Kegiatan</h3>
+                <h1 class="display-3 text-center">ABV</h1>
+            </div>
+        </div>
         <div class="container py-3">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb bg-white">
@@ -41,27 +47,60 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card border-0">
-                                <img src="{{ asset('') }}" alt="">
+                                <img src="{{ asset('image/undraw_date_picker_gorr.png') }}" alt="" class="card-img-top">
                                 <div class="card-body">
-                                    <h3>Judul</h3>
-                                    <p>isi</p>
+                                    <h3>Manage Event</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet qui eligendi aperiam distinctio reprehenderit repellat veritatis enim consequuntur beatae amet deserunt neque, exercitationem mollitia quam quae cupiditate excepturi. Non, veniam.</p>
                                 </div>
                             </div>
                         </div> <div class="col-md-4">
                             <div class="card border-0">
-                                <img src="{{ asset('') }}" alt="">
+                                <img src="{{ asset('image/undraw_my_app_grf2.png') }}" alt="" class="card-img-top">
                                 <div class="card-body">
-                                    <h3>Judul</h3>
-                                    <p>isi</p>
+                                    <h3>Manage Register</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, deserunt nostrum doloribus repudiandae molestias, totam natus veritatis illo repellat aperiam animi rerum, est quaerat vitae ut quas voluptates quisquam ex.</p>
                                 </div>
                             </div>
                         </div> <div class="col-md-4">
                             <div class="card border-0">
-                                <img src="{{ asset('') }}" alt="">
+                                <img src="{{ asset('image/undraw_schedule_pnbk.png') }}" alt="" class="card-img-top">
                                 <div class="card-body">
-                                    <h3>Judul</h3>
-                                    <p>isi</p>
+                                    <h3>Schedule Event</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, deserunt nostrum doloribus repudiandae molestias, totam natus veritatis illo repellat aperiam animi rerum, est quaerat vitae ut quas voluptates quisquam ex.</p>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-white">
+                    <li class="breadcrumb-item active" aria-current="page">Kegiatan</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card border-0">
+                            <img src="{{ asset('image/undraw_quitting_time_dm8t.png') }}" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3>Kegiatan Non-active</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, deserunt nostrum doloribus repudiandae molestias, totam natus veritatis illo repellat aperiam animi rerum, est quaerat vitae ut quas voluptates quisquam ex.</p>
+                                <button type="submit" class="btn btn-outline-info btn-lg btn-block" disabled>Coming Soon</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-0">
+                            <img src="{{ asset('image/undraw_winter_designer_a2m7.png') }}" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3>Kegiatan Active</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, deserunt nostrum doloribus repudiandae molestias, totam natus veritatis illo repellat aperiam animi rerum, est quaerat vitae ut quas voluptates quisquam ex.</p>
+                                <button type="submit" class="btn btn-outline-secondary btn-lg btn-block">Daftar</button>
                             </div>
                         </div>
                     </div>
