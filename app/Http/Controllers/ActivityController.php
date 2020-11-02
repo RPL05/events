@@ -10,7 +10,6 @@ use Alfa6661\AutoNumber\AutoNumberTrait;
 
 class ActivityController extends Controller
 {
-
     public function __construct()
     {
         $this->activity = new Activity();
@@ -23,9 +22,7 @@ class ActivityController extends Controller
     }
     public function create()
     {
-        $getcode = $this->activity->generateCode();
-
-        return view("backend.kegiatan.create", compact('getcode'));
+        return view("backend.kegiatan.create");
     }
     public function store()
     {
@@ -41,12 +38,12 @@ class ActivityController extends Controller
             'information'   => 'required',
             'status'        => 'required',
             'price'         => 'required',
-            'images'        => 'file|image|max:5000',
+            'images'        => 'required|file|image|max:5000',
             'capacity'      => 'required',
         ]), function(){
-            if(request()->hasFIle('images')){
+            if(request()->hasFile('images')){
                 request()->validate([
-                    'images'  => 'file|image|max:5000',
+                    'images'  => 'required|file|image|max:5000',
                 ]);
             }
         });
@@ -71,8 +68,13 @@ class ActivityController extends Controller
         $this->storeImage($activity);
         return redirect()->back()->with(['success' => 'berhasil diedit' ]);
     }
-    public function destroy()
+    public function destroy(Activity $activity)
     {
-        //
+        $activity->delete();
+        if(\File::exists((public_path('storage/'. $activity->images))));
+        {
+            \File::delete(public_path('storage/'. $activity->images));
+        }
+        return redirect()->back();
     }
 }

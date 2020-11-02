@@ -42,19 +42,19 @@
               <div class="col-md-6">
                 <div class="form-group">
                     <label for="name">Image</label>
-                    <input type="file" name="images" id="" class="form-control" placeholder="">
+                    <input type="file" name="images" id="" value="{{$activity->images}}" class="form-control" placeholder="">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                     <label for="name">Price</label>
-                    <input type="number" name="price" id="" class="form-control" placeholder="">
+                <input type="number" name="price" id="" value="{{$activity->price}}" class="form-control" placeholder="">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                     <label for="name">capacity</label>
-                    <input type="number" name="capacity" id="" class="form-control" placeholder="">
+                    <input type="number" name="capacity" id="" value="{{$activity->capacity}}" class="form-control" placeholder="">
                 </div>
               </div>
               <div class="col-md-12">
@@ -68,6 +68,7 @@
               <button type="submit" class="btn btn-outline-info">
                   Save
               </button>
+              <a href="{{route('backend.kegiatan.index')}}" class="btn btn-outline-secondary">Kembali</a>
             </div>
           </form>
         </div>

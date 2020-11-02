@@ -31,7 +31,11 @@
                 <td>{{$activity->date}}</td>
                 <td>{{$activity->status}}</td>
                 <td>
-                  <a href="http://" class="btn btn-outline-danger btn-sm">Hapus</a>
+                <form action="{{route('backend.kegiatan.delete', $activity->id)}}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                        <button class="btn btn-outline-danger btn-sm">Hapus</button>
+                    </form>
                 </td>
               </tr>
               @endforeach

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    
+
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -32,6 +32,7 @@
                       <th>011019</th>
                       <th>Wait</th>
                       <th>
+                      <a href="//" class="btn btn-info">Edit</a>
                         <a href="{{{route('register.show-register')}}}" class="btn btn-info">Tampilkan</a>
                       </th>
                     </tr>
